@@ -1,0 +1,29 @@
+{
+  "offer": {
+    "what_we_sell": "One sentence: the product or service and what it does",
+    "problem_it_solves": "One sentence: the pain the buyer feels before they buy"
+  },
+  "icp": {
+    "target_roles": [
+      "VP of Sales",
+      "Head of Growth",
+      "Founder who runs sales"
+    ],
+    "target_companies": "B2B software companies",
+    "exclude": [
+      "Agencies that sell the same service",
+      "Recruiters"
+    ],
+    "employee_range": [
+      20,
+      500
+    ]
+  },
+  "weights": {
+    "reply": {
+      "base_rate": 0.12
+    },
+    "target_seniority": 3,
+    "signal_half_life_days": 21
+  }
+}

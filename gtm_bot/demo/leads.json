@@ -1,0 +1,168 @@
+[
+  {
+    "id": "demo-01",
+    "name": "Priya Raman",
+    "headline": "VP Sales at Quillcount | Building a 25-person outbound team",
+    "position": "VP Sales",
+    "company": "Quillcount (B2B accounting automation software, 120 employees)",
+    "signal": {
+      "text": "Priya wrote a LinkedIn post: 'Our SDRs booked 40% fewer meetings this quarter on the same activity volume. Cold lists are dead. How are you all deciding which accounts to work?'",
+      "date": "2026-09-20"
+    },
+    "messages": [
+      {"label": "Signal-led question", "text": "Priya, your post about meetings dropping 40% on the same volume stuck with me. When you say cold lists are dead, are your SDRs prioritizing by any signals yet, or is it still territory-based?"},
+      {"label": "Pitch + meeting", "text": "Hi Priya, I hope this message finds you well! Pipewell is the #1 AI-powered buying signal platform. We help sales teams 3x pipeline by surfacing in-market accounts automatically. Do you have 15 minutes next Tuesday or Wednesday for a quick demo?"},
+      {"label": "Resource offer", "text": "Priya, saw your post on the 40% meeting drop. We pulled together how 6 SaaS SDR teams re-cut their account lists around hiring and competitor signals. Happy to send it over if useful."}
+    ]
+  },
+  {
+    "id": "demo-02",
+    "name": "Marcus Dale",
+    "headline": "Head of Sales Development @ Dockwren",
+    "position": "Head of Sales Development",
+    "company": "Dockwren (logistics software for mid-market shippers, 60 employees)",
+    "signal": {
+      "text": "Marcus commented on a Scoutrill (a competing buying-signal tool) post about intent data: 'Curious how this compares to just watching job changes.'",
+      "date": "2026-09-17"
+    },
+    "messages": [
+      "Hi Marcus, I hope this message finds you well! I'm the founder of Pipewell, the leading AI-powered signal platform that helps sales teams 3x their pipeline. We work with companies just like Dockwren. Do you have 15 minutes next Tuesday or Wednesday for a quick demo? https://cal.com/pipewell/demo"
+    ]
+  },
+  {
+    "id": "demo-03",
+    "name": "Elena Voss",
+    "headline": "Founder @ Brisklane Outbound | We book 30+ meetings/month for B2B SaaS via LinkedIn outbound",
+    "position": "Founder & CEO",
+    "company": "Brisklane Outbound (outbound lead generation agency, 15 employees)",
+    "signal": {
+      "text": "Elena liked a post about signal-based outbound.",
+      "date": "2026-09-15"
+    },
+    "messages": [
+      "Elena, noticed you're deep in signal-based outbound for your clients. How are you deciding which signals are worth acting on vs noise?"
+    ]
+  },
+  {
+    "id": "demo-04",
+    "name": "Tom Becker",
+    "headline": "Senior Software Engineer at Quillcount | Rust, Postgres, distributed systems",
+    "position": "Senior Software Engineer",
+    "company": "Quillcount (B2B accounting automation software, 120 employees)",
+    "signal": {
+      "text": "Tom liked a post comparing sales engagement tools.",
+      "date": "2026-09-18"
+    },
+    "messages": [
+      "Hi Tom, saw you liked a post about sales tools. Is your team evaluating anything for outbound right now?"
+    ]
+  },
+  {
+    "id": "demo-05",
+    "name": "Aisha Mensah",
+    "headline": "Revenue Operations Manager | Helpquay",
+    "position": "Revenue Operations Manager",
+    "company": "Helpquay (customer support software, 200 employees)",
+    "signal": {
+      "text": "Helpquay posted 6 new SDR job openings on LinkedIn this month.",
+      "date": "2026-09-12"
+    },
+    "messages": [
+      "Hi Aisha, noticed Helpquay is hiring 6 SDRs, congrats on the growth! Pipewell helps RevOps teams route in-market accounts to new reps so they ramp faster. Would you be open to a quick chat?"
+    ]
+  },
+  {
+    "id": "demo-06",
+    "name": "Jordan Kim",
+    "headline": "Open to work | Former SDR Manager | Looking for my next sales leadership role",
+    "position": "",
+    "company": "",
+    "signal": {
+      "text": "Jordan commented 'This is so true' on a post about SDR burnout.",
+      "date": "2026-09-19"
+    },
+    "messages": [
+      "Jordan, your comment on the SDR burnout post resonated. When you ran your team, what was the biggest time sink in prospecting?"
+    ]
+  },
+  {
+    "id": "demo-07",
+    "name": "Daniel Ortiz",
+    "headline": "Chief Revenue Officer at Northbeam Health",
+    "position": "Chief Revenue Officer",
+    "company": "Northbeam Health (regional network of physical therapy clinics, 900 employees)",
+    "signal": {
+      "text": "Daniel started a new role as Chief Revenue Officer at Northbeam Health.",
+      "date": "2026-08-30"
+    },
+    "messages": [
+      "Congrats on the new role at Northbeam, Daniel! First 90 days as CRO usually means rebuilding the pipeline plan. What does outbound look like for the clinics today?"
+    ]
+  },
+  {
+    "id": "demo-08",
+    "name": "Hannah Lee",
+    "headline": "Head of Growth at Spendlark | ex-HubSpot",
+    "position": "Head of Growth",
+    "company": "Spendlark (spend management software for startups, 80 employees)",
+    "signal": {
+      "text": "Hannah registered for the webinar 'Rebuilding outbound around buying signals'.",
+      "date": "2026-08-23"
+    },
+    "messages": [
+      "Hi Hannah, I saw you visited our pricing page three times this week and opened our last two emails, so I figured you're evaluating tools. Want me to send over a proposal?"
+    ]
+  },
+  {
+    "id": "demo-09",
+    "name": "Sam Whitaker",
+    "headline": "Account Executive at Quillcount",
+    "position": "Account Executive",
+    "company": "Quillcount (B2B accounting automation software, 120 employees)",
+    "signal": {
+      "text": "Sam liked Priya Raman's post about SDR meetings dropping 40%.",
+      "date": "2026-09-21"
+    },
+    "messages": [
+      "Hi Sam, I came across your profile and was really impressed by your background at {COMPANY_NAME}. I'd love to connect and pick your brain about your sales process!"
+    ]
+  },
+  {
+    "id": "demo-10",
+    "name": "Grace Okafor",
+    "headline": "Co-founder & CEO at Binwren | Founder-led sales, for now",
+    "position": "Co-founder & CEO",
+    "company": "Binwren (inventory software for B2B wholesalers, 35 employees)",
+    "signal": {
+      "text": "Grace posted: 'Doing founder-led sales and spending 3 hours a day on LinkedIn prospecting. There has to be a better way to know who's actually ready to talk.'",
+      "date": "2026-09-21"
+    },
+    "messages": [
+      "Grace, the 3 hours a day line hit home. Most founders I talk to who are still doing their own sales end up spending the time on accounts that were never going to buy this quarter anyway, and it's brutal because every hour you spend prospecting is an hour not spent on product, hiring or closing the deals that are already in motion. We've been working on this exact problem with a few other founders at your stage, looking at signals like competitor engagement, hiring, and funding to figure out who is actually in-market. Out of curiosity, how are you deciding who to reach out to today?"
+    ]
+  },
+  {
+    "id": "demo-11",
+    "name": "Victor Hale",
+    "headline": "Director of Sales, North America | Fernpoint",
+    "position": "Director of Sales",
+    "company": "Fernpoint (HR software for mid-size companies, 300 employees)",
+    "signal": {
+      "text": "Victor followed Scoutrill's company page (a competing buying-signal tool).",
+      "date": "2026-08-01"
+    },
+    "messages": [
+      "Victor, quick one: is your team running outbound off intent signals yet, or mostly static lists?"
+    ]
+  },
+  {
+    "id": "demo-12",
+    "name": "Nina Petrova",
+    "headline": "Marketing Coordinator at Helpquay",
+    "position": "Marketing Coordinator",
+    "company": "Helpquay (customer support software, 200 employees)",
+    "messages": [
+      "Hi Nina, hope you're having a great week! I wanted to reach out because we help companies like Helpquay grow pipeline. Let me know if you'd be interested in learning more."
+    ]
+  }
+]

@@ -1,0 +1,30 @@
+{
+  "as_of": "2026-09-22",
+  "offer": {
+    "what_we_sell": "Pipewell, a tool that watches LinkedIn and company data for buying signals (competitor engagement, hiring, funding, posts about outbound problems) and tells sales reps which accounts to contact this week",
+    "problem_it_solves": "Sales development teams spend most of their time prospecting accounts that are not in-market, so outbound reply rates and meetings booked keep falling"
+  },
+  "icp": {
+    "target_roles": [
+      "VP of Sales",
+      "Head of Sales Development",
+      "SDR or BDR manager",
+      "Revenue operations lead",
+      "Founder who runs sales"
+    ],
+    "target_companies": "B2B software companies that run outbound sales",
+    "exclude": [
+      "Outbound or lead generation agencies",
+      "Recruiters"
+    ],
+    "employee_range": [
+      20,
+      500
+    ]
+  },
+  "weights": {
+    "reply": {
+      "base_rate": 0.12
+    }
+  }
+}
