@@ -1,10 +1,12 @@
-# HeyReach-jev-bot
+# HeyReach + Jev bot
 
 Signal-based LinkedIn outbound scoring for [HeyReach](https://heyreach.io), running on Jev (TypeSafe System One).
 
 It scores every lead in your HeyReach lists and campaigns, every first-message variant you wrote, and the chance each lead replies. It picks the best message for each person and writes the result back into HeyReach as lead lists and DRAFT campaigns. Once you have reply history, it learns what actually earns replies in your account and ranks the next list with that.
 
 **Nothing here starts a campaign or sends a message.** See [Guardrails](#guardrails).
+
+![How a run works](docs/img/01-flow.png)
 
 ---
 
@@ -21,24 +23,24 @@ If you already use HeyReach, this is the whole setup. About 10 minutes, most of 
 
 The HeyReach key is a normal public-API key. You can delete it when you're done.
 
-### 2. Open the folder in Claude Code
-
-Unzip it wherever you keep projects, then start Claude Code in it:
+### 2. Clone it and open it in Claude Code
 
 ```bash
-unzip gtm-bot.zip
-cd gtm-bot
+git clone https://github.com/matthew004-web/heyreach-jev-bot.git
+cd heyreach-jev-bot
 claude
 ```
 
-Want it in your own GitHub? It's a plain folder, so make it a repo in two commands:
+Want your own copy to change? Fork it on GitHub, or push the clone somewhere private:
 
 ```bash
-git init && git add . && git commit -m "Initial commit"
-gh repo create gtm-bot --private --source=. --push
+git remote remove origin
+gh repo create heyreach-jev-bot --private --source=. --push
 ```
 
 `.env` and `data/` are git-ignored from the start, so your keys, your leads and your run output never leave your machine.
+
+One naming note: the repo is `heyreach-jev-bot` and the Python package inside it is `gtm_bot`, so every command starts with `python -m gtm_bot`.
 
 ### 3. Ask Claude to set it up
 
@@ -106,6 +108,8 @@ gtm_best_variant   Variant A
 gtm_why            Exact-fit role · Head / Director / VP · wrote about problem, 2d ago
 ```
 
+![What you get back](docs/img/03-in-heyreach.png)
+
 Open the campaigns in HeyReach, add a follow-up step if you want one, and start them yourself.
 
 ---
@@ -136,6 +140,8 @@ Outputs go to `data/gtm_bot/<run>/` as `report.html`, `scores.json` and `raw.jso
 Jev is cheap enough that you can score everything instead of sampling. The demo's 12 leads and 14 messages are 26 requests: about 2.6 seconds and $0.0013 in total. Learning from 400 past conversations is about 800 requests: under a minute and $0.0381.
 
 ## What Jev judges
+
+![What Jev is asked](docs/img/02-what-jev-judges.png)
 
 Each lead gets one request, and each message variant gets another. The questions inside a request run in parallel. Everything numeric (signal age, word counts, weights, thresholds) stays in code, in `scoring.py`, for you to read and change.
 
@@ -240,3 +246,7 @@ python -m gtm_bot hr setup --from data/gtm_bot/RUN/raw.json --messages variants.
 ```
 
 `hr score` takes `--model data/gtm_bot/model.json` to score with what it learned from your inbox. `hr setup` takes `--tiers` (default A and B) and `--prefix` (default `[GTM]`), and `hr start` takes `--max-campaigns` (default 3).
+
+## License
+
+MIT. See [LICENSE](LICENSE).
